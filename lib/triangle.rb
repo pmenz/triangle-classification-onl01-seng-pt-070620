@@ -25,7 +25,7 @@ class Triangle
     if a==0 || b==0 || c==0 then real_triangle << false 
     end
     raise TriangleError if real_triangle.include?(false)
-    end
+    
   end
 
   class TriangleError < StandardError
