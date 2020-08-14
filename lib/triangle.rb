@@ -26,4 +26,6 @@ def kind
     raise TriangleError if real_triangle.include?(false)
     end
   end
+  class TriangleError < StandardError
+  end
 end
