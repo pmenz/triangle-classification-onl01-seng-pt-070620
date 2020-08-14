@@ -19,8 +19,11 @@ class Triangle
 
   def validate_triangle
     real_triangle = [(a + b > c), (a + c > b), (b + c > a)]
-    [a, b, c].each do |side|
-      real_triangle << false if side <= 0 
+
+=begin    [a, b, c].each do |side|
+=end      real_triangle << false if side <= 0 
+    if a==0 || b==0 || c==0 then real_triangle << false 
+    end
     raise TriangleError if real_triangle.include?(false)
     end
   end
