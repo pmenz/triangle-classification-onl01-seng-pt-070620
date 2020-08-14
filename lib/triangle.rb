@@ -30,3 +30,4 @@ def kind
   class TriangleError < StandardError
   end
 end
+end
