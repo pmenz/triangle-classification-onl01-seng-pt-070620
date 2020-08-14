@@ -5,8 +5,13 @@ class Triangle
     @a=a
     @b=b 
     @c=c 
+    
+  
+  
   end
   
   
-
+  
+class TriangleError < StandardError
+  
 end
